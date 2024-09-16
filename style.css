@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #e1d8e2;
+}
+@media only screen and (min-width: 320px){
+
+    .main-container{
+        grid-template-columns:auto;
+ 
+    }
+    .card{
+        width: 50vw;
+     
+    }
+    .imgBox{
+  
+    height: 20vh;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    .main-container{
+        grid-template-columns:auto auto;
+ 
+    }
+    .card{
+        width: 40vw;
+     
+    }
+    .imgBox{
+  
+        height: 40vh;
+        }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-container{
+        grid-template-columns:auto auto auto ;
+ 
+    }
+
+    .card{
+        width: 25vw;
+     
+    }
+    .imgBox{
+  
+        height: 40vh;
+        }
+
+}
+@media only screen and (min-width: 1000px) {
+    .main-container{
+        grid-template-columns:auto auto auto auto ;
+ 
+    }
+    .card{
+        width: 20vw;
+     
+    }
+    .imgBox{
+        height: 60vh;
+        }
+
+}
+.elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-div{
+    height: 20vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #674188;
+    font-size: larger;
+    width: 90%;
+}
+.main-container{
+    padding: 10px;
+    display: grid;
+justify-items: center;
+width: 90%;
+gap: 15px;
+}
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   align-items: center;
+   background-color: white;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 20px;
+padding: 10px;
+box-shadow: 2px 2px 4px grey;
+}
+.imgBox{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.imgStyle{
+width: 75%;
+height: 80%;
+}
+.text-div{
+height: 20vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.title{
+    font-size: larger;
+    color: rgb(26, 26, 88);
+}
+.price{
+    font-size: xx-large;
+
+    color: green;
+}
